@@ -1,3 +1,5 @@
+
+
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html,
 body {
@@ -58,12 +60,13 @@ header h1 {
     border-style: solid;
     border-width: 0.5rem 0;
 }
-.main-sections h2{
+.sub-section-title{
     padding-left: 1rem;
 }
 .main-sections p {
     margin: 0;
     padding: 1rem;
+    size: 1.5rem;
     background-color: cyan;
 }
 
@@ -77,6 +80,27 @@ header h1 {
     background-color: brown;
     margin: 0;
 }
+#true-or-false-ps{
+    text-align: center;
+}
+#true-or-false-ps :nth-child(odd){
+    font-size: 2.5rem;
+}
+
+#binary-ps{
+    text-align: center;
+    font-size: 2.5rem;
+}
+#binary-ps :nth-child(1){
+    background-color: gray;
+    border: 0.5rem solid black;
+    margin: 2rem auto;
+    max-width: 75%;
+    width: 100%;
+}
+#binary-ps :nth-child(3){
+    background-color: green;
+}
 
 #section-2-headers {
     margin: 0 auto;
@@ -84,9 +108,10 @@ header h1 {
     position: relative;
 }
 
+
 /* Parallax Images or Backgrounds */
 .parallax-image {
-    height: 100lvh;
+    height: 100vh;
     max-width: 100%;
     width: 100%;
 }
@@ -105,21 +130,17 @@ header h1 {
 }
 
 #image-2 {
-    background: url(../images/image-1.png) no-repeat fixed center;
-    background-color: darkgray;
-    background-size: contain;
-}
-
-#image-3 {
-    background: url(../images/image-1.png) no-repeat fixed center;
-    background-color: darkorange;
+    background: url(../images/image-2.png) no-repeat fixed center;
+    background-color: green;
     background-size: contain;
 }
 
 
 
 .sect-title-anim{
-    animation: section-title-appear 3s linear repeat;
+    animation: section-title-appear 30s linear repeat;
+}
+#section-title-1{
 }
 
 /* Class for making YouTube/Vimeo videos responsive */

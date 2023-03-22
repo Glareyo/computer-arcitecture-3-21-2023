@@ -34,14 +34,20 @@
 
     <section class="main-sections" id="section-1">
       <div class="parallax-image" id="image-1">
-        <h2 class="section-title">What is Boolean Algebra?</h2>
+        <h2 class="section-title" id="sect-title-1">What is Boolean Algebra?</h2>
       </div>
 
       <section class="info-container">
-        <h2>Boolean Algebra</h1>
-        <p>Boolean Algebra is a mathematical concept, similar to College Algebra.</p>
-        <p>However, rather than dealing with numbers, Boolean deals in expressions, logical variables, and non-number
-          concepts, all leading to 2 answers:</p>
+        <h2 class="sub-section-title">Boolean Algebra</h1>
+          <p>Boolean Algebra is a mathematical concept, similar to College Algebra.</p>
+          <p>However, rather than dealing with numbers, Boolean deals in expressions, logical variables, and non-number
+            concepts, all leading to 2 answers:</p>
+          <div id="true-or-false-ps">
+            <p>True</p>
+            <p>Or</p>
+            <p>False</p>
+          </div>
+
       </section>
     </section>
 
@@ -50,9 +56,9 @@
     <section class="main-sections" id="section-2">
       <div class="parallax-image" id="image-2">
         <div id="section-2-headers">
-          <h2 class="section-title">Boolean and It's Role</h2>
-          <h2 class="section-title">in</h2>
-          <h2 class="section-title">Computer Architecture</h2>
+          <h2 class="section-title" id="sect-title-2-1">Boolean and It's Role</h2>
+          <h2 class="section-title" id="sect-title-2-2">in</h2>
+          <h2 class="section-title" id="sect-title-2-3">Computer Architecture</h2>
         </div>
       </div>
 
@@ -61,6 +67,16 @@
         <p>Though focused on logical expressions, Boolean Algebra plays a major role in one of a computer’s most
           important
           aspect:</p>
+
+        <div id="binary-ps">
+          <p>Binary Code</p>
+          <p>( 1s and 0s )</p>
+        </div>
+        <section id="binary-explaination-section">
+          <h2 class="sub-section-title">Binary</h2>
+          <p>For a brief description, binary is simple system containing 2 numbers: 1s and 0s.</p>
+
+        </section>
       </section>
     </section>
 
@@ -78,24 +94,22 @@
   <!-- Write your jQuery code inside of the .ready() function below -->
   <script>
     $(document).ready(function () {
-      $(window).scroll(function(){
-      var windowOffset = $(window).scrollTop();
-      var targetOffset = 700;
+      $(window).scroll(function () {
+        var windowOffset = $(window).scrollTop();
+        var targetOffset = 900;
 
-      //Section 1 JQuery
-      var section1Offset = $('#section-1').offset().top;
-      var sec1CurrentPos = section1Offset - windowOffset;
-      if (sec1CurrentPos < targetOffset ){
-        $('#section-1 .section-title').fadeIn();
-        $('#section-1 .section-title').addClass('sect-title-anim');
+        //Section 1 JQuery
+        var section1Offset = $('#sect-title-1').offset().top;
+        var sec1CurrentPos = section1Offset - windowOffset;
+        if (sec1CurrentPos < targetOffset) {
+          $('#sect-title-1').addClass('sect-title-anim');
           //Display
-      }
-      else{
-        $('#section-1').fadeOut();
-        $('#section-1 .section-title').removeClass('sect-title-anim');
-      }
+        }
+        else {
+          $('#sect-title-1').removeClass('sect-title-anim');
+        }
 
-    }); //Window Closed
+      }); //Window Closed
 
 
 
