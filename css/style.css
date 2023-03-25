@@ -1,16 +1,13 @@
-
-
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
-html,
-body {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
 }
 
 html {
-    /* Standard text-settings below */
-    font-size: 1em;
+		/* Standard text-settings below */
+	font-size: 1em;
     line-height: 1.4em;
 }
 
@@ -19,136 +16,137 @@ html {
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
-body {}
-
-
-#container {}
-
-
-header {
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    left: 10%;
-    top: 30%;
-    color: white;
+body {
+	
+	
 }
 
-header h1 {
-    font-size: 3rem;
+
+#container {
+	
+}
+/* Parallax Image CSS */
+.parallax-img{
+    height: 100lvh;
+    max-width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed    ;
+    background-size: contain;
 }
 
-.main-sections {
-    margin: 0;
+#header-img{
+    background-image: url(../images/image-1.png);
+}
+#header-title{
+    position: relative;
+    top: 50%;
+    left: 30%;
+}
+#header-title h1{
+    font-size: 6rem;
+}
+#header-title h2{
+    font-size: 2rem;
 }
 
-.section-title {
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3rem;
-    line-height: 3rem;
 
-    padding: 1.5rem;
-    margin: 0 auto;
 
+/* General Section CSS */
+.main-section{
+    background-color: cadetblue;
+}
+.main-section h1{
     position: relative;
     top: 50%;
     text-align: center;
+    font-size: 5rem;
+}
+.main-section h3{
+    font-size: 2rem;
+    padding: 2.5rem;
+
+    background-color: wheat;
+}
+.main-section p{
+    margin-left: 3rem;
+    font-size: 1.5rem;
 }
 
-.info-container{
-    border-color: black;
-    border-style: solid;
-    border-width: 0.5rem 0;
+
+
+/* Section 1 Specified CSS */
+#section-1-img{
+    background-image: url(../images/image-1.png);
 }
-.sub-section-title{
-    padding-left: 1rem;
-}
-.main-sections p {
-    margin: 0;
-    padding: 1rem;
-    size: 1.5rem;
+#section-1-comparison-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
     background-color: cyan;
 }
-
-
-
-/* Specific Sections */
-#intro-sect h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 4rem;
-    position: relative;
-    background-color: brown;
-    margin: 0;
-}
-#true-or-false-ps{
-    text-align: center;
-}
-#true-or-false-ps :nth-child(odd){
-    font-size: 2.5rem;
-}
-
-#binary-ps{
-    text-align: center;
-    font-size: 2.5rem;
-}
-#binary-ps :nth-child(1){
-    background-color: gray;
-    border: 0.5rem solid black;
-    margin: 2rem auto;
-    max-width: 75%;
-    width: 100%;
-}
-#binary-ps :nth-child(3){
-    background-color: green;
-}
-
-#section-2-headers {
+#section-1-comparison-container h3{
     margin: 0 auto;
-    top: 25%;
-    position: relative;
+}
+.section-1-comparison-sub-container{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: red;
+
+    max-width: 50%;
+    width: 100%;
+
+    margin: 0 auto;
+}
+.section-1-comparison-sub-container ul{
+        width: 100%;
+    background-color: greenyellow;
+
+    list-style: none;
+    border-right: solid 0.5rem black;
+}
+.section-1-comparison-sub-container figure{
+    width: 100%;
+    background-color: bisque;
 }
 
+#border{
+    height: 1rem;
+    background-color: red;
+}
 
-/* Parallax Images or Backgrounds */
-.parallax-image {
-    height: 100vh;
-    max-width: 100%;
+/* Section 2 Specified CSS */
+#circuit-figure{
+    display: flex;
+
+    max-width: 75%;
+    margin: 0 auto;
+}
+#circuit-figure figcaption{
+    max-width: 50%;
     width: 100%;
 }
-
-#header-image {
-    background: url(../images/image-1.png) no-repeat fixed center;
-    
-    background-size: contain;
-    background-color: black;
+#circuit-figure p{
+    line-height: 125%;
 }
-
-#image-1 {
-    background: url(../images/image-1.png) no-repeat fixed center;
-    background-size: contain;
-    background-color: gray;
+#circuit-figure img{
+ max-width: 50%;
+ width: 100%;
 }
-
-#image-2 {
-    background: url(../images/image-2.png) no-repeat fixed center;
-    background-color: green;
-    background-size: contain;
-}
-
-
-
-.sect-title-anim{
-    animation: section-title-appear 30s linear repeat;
-}
-#section-title-1{
+#bits-p-container{
+    margin-top: 3rem;
+    text-align: center;
 }
 
 /* Class for making YouTube/Vimeo videos responsive */
 
 figure.responsive {
     position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
+    padding-bottom: 56.25%;  /* 16:9 */
     height: 0px;
     overflow: hidden;
     max-width: 100%;
@@ -174,19 +172,7 @@ hr {
     padding: 0px;
 }
 
-/* -------------------------------------------- */
-/* Animations */
-/* -------------------------------------------- */
-@keyframes section-title-appear{
-    0%{
-        color: green;
-        transform: translateY(50rem);
-    }
-    100%{
-        color: red;
-        transform: translateY(0rem);
-    }
-}
+
 
 /* ========================================
 MEDIA QUERIES!
@@ -195,37 +181,33 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for iPads and tablets.  */
 @media all and (min-width: 481px) {
-    header {
-        left: 10%;
-        top: 30%;
-    }
-
-
-
-
-}
-
-/* closes 481px+ */
+	
+	
+	
+	
+} /* closes 481px+ */
 
 
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
-    header {
-        left: 10%;
-    }
-
-    header h1 {
-        font-size: 5rem;
-    }
-
-}
-
-/* closes 769px+ */
+	
+	
+	
+	
+} /* closes 769px+ */
 
 
 
 /* Minimum width for desktop screens. */
-@media all and (min-width: 1024px) {}
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
 
-/* closes 1024px+ */
+
+
+
+

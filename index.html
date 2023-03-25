@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Boolean and Computers</title>
+  <title>***</title>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -17,76 +17,119 @@
 
 <body>
 
-
-
   <div id="container">
 
+    <!-- Header -->
     <header>
-      <h1>Boolean Algebra</h1>
-      <h2>The Role of True or False in Computer Architecture</h2>
+      <div class="parallax-img" id="header-img">
+        <div id="header-title">
+          <h1>Boolean</h1>
+          <h2>And It's Role in Computer Architecture</h2>
+        </div>
+      </div>
     </header>
 
-    <!-- Section 1 -->
-    <section id="intro-sect">
-      <div class="parallax-image" id="header-image"></div>
-      <h2>A reference guide to understanding Boolean Algebra and Computer Architecture</h2>
-    </section>
+    <div id="border"></div>
 
-    <section class="main-sections" id="section-1">
-      <div class="parallax-image" id="image-1">
-        <h2 class="section-title" id="sect-title-1">What is Boolean Algebra?</h2>
+    <section class="main-section" id="section-1">
+      <div class="parallax-img" id="section-1-img">
+        <h1>What is Boolean?</h1>
       </div>
-
-      <section class="info-container">
-        <h2 class="sub-section-title">Boolean Algebra</h1>
-          <p>Boolean Algebra is a mathematical concept, similar to College Algebra.</p>
-          <p>However, rather than dealing with numbers, Boolean deals in expressions, logical variables, and non-number
-            concepts, all leading to 2 answers:</p>
-          <div id="true-or-false-ps">
-            <p>True</p>
-            <p>Or</p>
-            <p>False</p>
-          </div>
-
-      </section>
-    </section>
-
-    <!-- Section 2 -->
-
-    <section class="main-sections" id="section-2">
-      <div class="parallax-image" id="image-2">
-        <div id="section-2-headers">
-          <h2 class="section-title" id="sect-title-2-1">Boolean and It's Role</h2>
-          <h2 class="section-title" id="sect-title-2-2">in</h2>
-          <h2 class="section-title" id="sect-title-2-3">Computer Architecture</h2>
-        </div>
-      </div>
-
-      <section class="info-container">
-        <p>So how does logical, numerical-less algebra play a role in the structure of computer architecture?</p>
-        <p>Though focused on logical expressions, Boolean Algebra plays a major role in one of a computer’s most
-          important
-          aspect:</p>
-
-        <div id="binary-ps">
-          <p>Binary Code</p>
-          <p>( 1s and 0s )</p>
-        </div>
-        <section id="binary-explaination-section">
-          <h2 class="sub-section-title">Binary</h2>
-          <p>For a brief description, binary is simple system containing 2 numbers: 1s and 0s.</p>
-
+      <section class="sub-section">
+        <h3>What is Boolean?</h3>
+        <p>So what is Boolean?</p>
+        <p>Boolean, in simple terms, is a branch of Algebra, similar to standard highschool or College algebra</p>
+        <section id="section-1-comparison-container">
+          <h3>But what makes Boolean Different from other Algebra?</h3>
+          <section class="section-1-comparison-sub-container">
+            <ul>
+              <li>Basic algebra utilizes numbers</li>
+              <li>5's</li>
+              <li>15's</li>
+              <li>etc...</li>
+              <li>And also uses numerical operations</li>
+              <li>I+15 = 0</li>
+              <li>60-40 = 20</li>
+              <li>X+1= 5</li>
+            </ul>
+            <figure>
+              <figcaption>Algebra</figcaption>
+              <img src="" alt="(img: algebraic equations / numbers)">
+            </figure>
+          </section>
+          <section class="section-1-comparison-sub-container">
+            <ul>
+              <li>Boolean Algebra uses Logical Operations and expressions.</li>
+              <li>OR</li>
+              <li>AND</li>
+              <li>And can result in 1 of 2 answers...</li>
+              <li>TRUE</li>
+              <li>or</li>
+              <li>FALSE</li>
+            </ul>
+            <figure>
+              <figcaption>Boolean</figcaption>
+              <img src="" alt="(img: OR, AND, NOT, etc...)">
+            </figure>
+          </section>
         </section>
       </section>
     </section>
 
+    <section class="main-section">
+      <div class="parallax-img" id="section-1-img">
+        <h1>Boolean and Computer Architecture</h1>
+      </div>
+      <section class="sub-section">
+        <h3>Boolean and Computer Architecture</h3>
+        <p>So how does Boolean, an algebra consisting of true or false, play a role in computer architecture, a computer
+          with circuits and wires?</p>
+        <p>To understand this, we must first understand the basic component of a computer...</p>
+
+        <!-- Sub section -->
+        <h3>Binary and Bits</h3>
+        <p>Break open a computer and what do you get?</p>
+        <p>A bunch of circuit boards and wires</p>
+        <br>
+          <figure id="circuit-figure">
+            <figcaption>
+              <p>Let’s take a circuit board and closely look into it...</p>
+              <p>A circuit board contains hundreds of little wires, each one either carrying an electrical charge, or not
+                carrying an electrical charge.</p>
+              <p>To a computer, a single wire is known as a <em>BIT</em>:</p>
+            </figcaption>
+            <img src="" alt="Circuit-image">
+          </figure>
+
+        <div id="bits-p-container">
+          <p>And a bit can only be in 1 of 2 states:</p>
+          <p class="bits-on-img">ON</p>
+          <p>or</p>
+          <p class="bits-off-img">OFF</p>
+          <p>This is also known as <em>BINARY</em>, meaning of 2 states</p>
+          <p>And is can be expressed as:</p>
+          <p class="bits-on-img">1</p>
+          <p>or</p>
+          <p class="bits-off-img">0</p>
+          <p>Similar to Boolean's Algebra results being only</p>
+          <p class="bits-on-img">TRUE</p>
+          <p>or</p>
+          <p class="bits-off-img">FALSE</p>
+        </div>
+
+        <!-- Sub section -->
+        <h3>Boolean and Computer Architecture</h3>
+        <p>But Boolean doesn't stop there...</p>
+        <p>One of the most used, and important, components that uses boolean are known as:</p>
+        <p id="logic-gate-title">Logic Gates</p>
+
+
+      </section>
+
+    </section>
+
+
   </div><!-- close "container" -->
-
-
-  <footer>
-    <p>&copy;Nehemiah Cedillo</p>
-    <p>DISCLAIMER: Currently in development...</p>
-  </footer>
 
   <!-- Link to jQuery on Google CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -95,22 +138,7 @@
   <!-- Write your jQuery code inside of the .ready() function below -->
   <script>
     $(document).ready(function () {
-      $(window).scroll(function () {
-        var windowOffset = $(window).scrollTop();
-        var targetOffset = 900;
 
-        //Section 1 JQuery
-        var section1Offset = $('#sect-title-1').offset().top;
-        var sec1CurrentPos = section1Offset - windowOffset;
-        if (sec1CurrentPos < targetOffset) {
-          $('#sect-title-1').addClass('sect-title-anim');
-          //Display
-        }
-        else {
-          $('#sect-title-1').removeClass('sect-title-anim');
-        }
-
-      }); //Window Closed
 
 
 
