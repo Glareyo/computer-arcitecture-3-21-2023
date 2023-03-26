@@ -97,22 +97,36 @@ body {
 
     background-color: red;
 
-    max-width: 50%;
+    max-width: 75%;
     width: 100%;
 
     margin: 0 auto;
 }
 .section-1-comparison-sub-container ul{
-        width: 100%;
+    width: 100%;
     background-color: greenyellow;
 
     list-style: none;
-    border-right: solid 0.5rem black;
 }
 .section-1-comparison-sub-container figure{
     width: 100%;
-    background-color: bisque;
+    background-color: black;
 }
+.section-1-comparison-sub-container img{
+    max-width: 100%;
+}
+.section-1-comparison-sub-container figcaption{
+    position: relative;
+
+    font-size: 4rem;
+    font-weight: 700;
+    max-width: 50%;
+    top: 50%;
+
+    margin: 0 auto;
+    color: white;
+}
+
 
 #border{
     height: 1rem;
@@ -140,6 +154,11 @@ body {
 #bits-p-container{
     margin-top: 3rem;
     text-align: center;
+}
+#logic-gate-title{
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem auto;
 }
 
 /* Class for making YouTube/Vimeo videos responsive */
