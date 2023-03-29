@@ -156,19 +156,54 @@ body {
 #bits-p-container{
     margin-top: 3rem;
     text-align: center;
-    
 }
-.bits-on-img{
-    background-image: url(../images/wire-on-gif.gif);
-    background-size: contain;
-    height: 5rem;
+#bits-p-container p{
+    padding: 0;
+    margin: 0;
+}
+.on-off-container{
+    margin: 5rem auto;
+    max-width: 80%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    border: solid 1rem gray;
+    background-color: darkgray;
+}
+.on-off-container h4{
+    font-size: 2rem;
 }
 
+.bits-on-img, .bits-off-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+
+    background-size: contain;
+}
+.bits-on-img h4,.bits-off-img h4{
+    font-size: 2rem;
+   
+    background-color: black;
+
+    padding: 1rem;
+    margin: 0 auto;
+
+    color: white;
+}
+#te-test{
+}
+
+.bits-on-img{
+    background-image: url(../images/wire-on-gif.gif);
+}
 .bits-off-img{
     background-image: url(../images/wire-off-gif.png);
-    background-size: contain;
-    height: 5rem;
-}v 
+}
 
 #logic-gate-title{
     font-weight: bold;
