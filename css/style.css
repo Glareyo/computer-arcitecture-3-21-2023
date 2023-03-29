@@ -195,8 +195,6 @@ body {
 
     color: white;
 }
-#te-test{
-}
 
 .bits-on-img{
     background-image: url(../images/wire-on-gif.gif);
@@ -210,6 +208,23 @@ body {
     text-align: center;
     margin: 2rem auto;
 }
+
+/* Section 3 specified css */
+.logic-gate-section{
+    max-width: 80%;
+    margin: 0 auto;
+    border: solid black 1rem;
+}
+.logic-gate-section h3{
+    background-color: gainsboro;
+    text-align: center;
+    padding: 1rem;
+}
+.logic-gate-card{
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* Class for making YouTube/Vimeo videos responsive */
 
