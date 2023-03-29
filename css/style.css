@@ -151,10 +151,25 @@ body {
  max-width: 50%;
  width: 100%;
 }
+
+/* Bits and Wire display */
 #bits-p-container{
     margin-top: 3rem;
     text-align: center;
+    
 }
+.bits-on-img{
+    background-image: url(../images/wire-on-gif.gif);
+    background-size: contain;
+    height: 5rem;
+}
+
+.bits-off-img{
+    background-image: url(../images/wire-off-gif.png);
+    background-size: contain;
+    height: 5rem;
+}v 
+
 #logic-gate-title{
     font-weight: bold;
     text-align: center;
